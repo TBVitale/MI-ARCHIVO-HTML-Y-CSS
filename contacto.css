@@ -1,0 +1,77 @@
+/*.contactoh1 {
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    border: solid;
+    background-color: gray;
+} */
+
+
+body {
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.Sqs1qcKV5QXZqqjdxTHiQQHaEK&pid=Api&P=0&h=180);
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+form {
+    padding: 50px 55px;
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+.input-group {
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+label {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+input,
+textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF8;
+    border: 2px solid #F0FAF1;
+    color: #3f3f3f;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b5cab6;
+    font-size: 15px;
+}
+
+.button {
+    font-size: 15px;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 25px;
+    background-color: #3f3f3f;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+}
+
+.button:hover {
+    background-color: #50E04B;
+}

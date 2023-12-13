@@ -1,0 +1,64 @@
+.nosotrosh1 {
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    border: solid;
+    background-color: gray;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+p {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+
+}
+
+.h3nosotros {
+    text-decoration: underline;
+    display: flex;
+    text-align: start;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.ulnosotros {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url(https://images7.alphacoders.com/328/thumb-1920-328258.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+footer {
+    padding-bottom: 15px;
+    text-decoration: underline;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    background-color: rgba(25, 254, 0, 0.162);
+
+}

@@ -1,0 +1,172 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ * {
+     font-family: "Roboto", sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+
+ body {
+     font-family: 'Times New Roman', Times, serif;
+     width: 100%;
+     height: 100%;
+ }
+
+ header {
+     position: sticky;
+     top: 0%;
+     z-index: 1;
+     background-color: #3f3f3f;
+     display: flex;
+     align-items: center;
+     width: 100%;
+     height: 120px;
+ }
+
+ .conteiner {
+     display: flex;
+     align-items: center;
+     width: 100%;
+     justify-content: space-between;
+     padding: 0 15px;
+     height: 100%;
+     box-sizing: border-box;
+ }
+
+ .logo img {
+     height: 100%;
+ }
+
+ .logo {
+     height: 120px;
+
+
+
+ }
+
+
+ nav a {
+     font-size: 20px;
+     padding: 0px 25px;
+     color: black;
+
+
+ }
+
+
+ nav a:hover {
+     background: #f3efef;
+     border-radius: 25px;
+ }
+
+
+ #inicio {
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     background: url(https://cdn.wallpapersafari.com/38/22/74HY35.jpg);
+     background-size: cover;
+     background-position: center center;
+     height: 100%;
+     width: 100%;
+ }
+
+ #inicio2 {
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     background: url(https://wallpaperaccess.com/full/781843.jpg);
+     background-size: cover;
+     background-position: center center;
+     height: 100%;
+     width: 100%;
+ }
+
+
+
+
+ .box {
+     display: inline-block;
+     width: 400px;
+     height: 620px;
+     margin: 20px;
+     padding: 20px;
+     text-align: center;
+     justify-content: space-between;
+     border-radius: 20px;
+ }
+
+
+
+ p {
+     margin-bottom: 40px;
+     font-size: 18px;
+     color: #fff;
+ }
+
+ h3 {
+     text-align: center;
+     text-decoration: underline;
+     font-size: 25px;
+     color: white;
+ }
+
+
+ .titplep {
+     text-decoration: underline;
+     font-size: 50px;
+     color: white;
+ }
+
+ .titles {
+     text-decoration: underline;
+     font-size: 50px;
+     color: #fff;
+ }
+
+ footer {
+     display: flexbox;
+     text-decoration: underline;
+     text-align: center;
+     font-size: 20px;
+     background: rgba(25, 254, 0, 0.4);
+ }
+
+ .clase-box .box:hover {
+     transform: translateY(-15px);
+     box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+ }
+
+ .img {
+     margin: 5px;
+     height: 290px;
+     width: 210px;
+ }
+
+
+ .li {
+     margin-bottom: 20px;
+     display: flex;
+     text-align: start;
+     font-size: 25px;
+     color: #fff;
+ }
+
+ .buttons {
+     background-color: rgba(98, 94, 94, 0.5);
+     font-size: 20px;
+     font-family: "Roboto", sans-serif;
+     border: solid black;
+     box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+     border-radius: 25px;
+ }
+
+ .imgtuco {
+     margin: 5px;
+     height: 290px;
+     width: 230px;
+ }
