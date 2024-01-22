@@ -1,10 +1,92 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.header {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 23px;
+    letter-spacing: -1.5px;
+    font-weight: 500px;
+}
+
+
+.nav {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.nav_link {
+    color: #FFF;
+    font-size: 20px;
+    transition: all 0.4s;
+}
+
+.nav_link:hover,
+.nav_link:focus {
+    color: grey;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 2px;
+    width: 27px;
+    background-color: #fff;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav--open {
+    transform: translate(0) !important;
+}
+
+.hamburger--open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
 .nosotrosh1 {
-    text-decoration: underline;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
-    border: solid;
-    background-color: gray;
+    color: white;
 }
 
 * {
@@ -51,14 +133,10 @@ body {
 
 
 footer {
-    padding-bottom: 15px;
-    text-decoration: underline;
+    color: white;
     font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 2%;
-    background-color: rgba(25, 254, 0, 0.162);
-
 }

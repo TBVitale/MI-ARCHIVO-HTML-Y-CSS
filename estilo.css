@@ -1,172 +1,224 @@
- html {
-     scroll-behavior: smooth;
- }
+/*MODIFICACIONES GENERALES*/
 
- * {
-     font-family: "Roboto", sans-serif;
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+html {
+    scroll-behavior: smooth;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
- body {
-     font-family: 'Times New Roman', Times, serif;
-     width: 100%;
-     height: 100%;
- }
+/*NAVBAR*/
 
- header {
-     position: sticky;
-     top: 0%;
-     z-index: 1;
-     background-color: #3f3f3f;
-     display: flex;
-     align-items: center;
-     width: 100%;
-     height: 120px;
- }
+ul {
+    list-style: none;
+}
 
- .conteiner {
-     display: flex;
-     align-items: center;
-     width: 100%;
-     justify-content: space-between;
-     padding: 0 15px;
-     height: 100%;
-     box-sizing: border-box;
- }
+a {
+    text-decoration: none;
+    color: inherit;
 
- .logo img {
-     height: 100%;
- }
+}
 
- .logo {
-     height: 120px;
+.header {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    top: 0;
+}
 
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 23px;
+    letter-spacing: -1.5px;
+    font-weight: 500px;
+}
 
 
- }
+.nav {
+    transition: all 0.3s ease-in-out;
+}
 
+.nav_list {
+    display: flex;
+    column-gap: 30px;
+}
 
- nav a {
-     font-size: 20px;
-     padding: 0px 25px;
-     color: black;
+.nav_link {
+    color: #FFF;
+    font-size: 20px;
+    transition: all 0.4s;
+}
 
+.nav_link:hover,
+.nav_link:focus {
+    color: grey;
+}
 
- }
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
 
+.bar {
+    height: 2px;
+    width: 27px;
+    background-color: #fff;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
 
- nav a:hover {
-     background: #f3efef;
-     border-radius: 25px;
- }
+.nav--open {
+    transform: translate(0) !important;
+}
 
+.hamburger--open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
 
- #inicio {
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     background: url(https://cdn.wallpapersafari.com/38/22/74HY35.jpg);
-     background-size: cover;
-     background-position: center center;
-     height: 100%;
-     width: 100%;
- }
+.hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+}
 
- #inicio2 {
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     background: url(https://wallpaperaccess.com/full/781843.jpg);
-     background-size: cover;
-     background-position: center center;
-     height: 100%;
-     width: 100%;
- }
-
-
-
-
- .box {
-     display: inline-block;
-     width: 400px;
-     height: 620px;
-     margin: 20px;
-     padding: 20px;
-     text-align: center;
-     justify-content: space-between;
-     border-radius: 20px;
- }
+.hamburger--open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
 
 
 
- p {
-     margin-bottom: 40px;
-     font-size: 18px;
-     color: #fff;
- }
 
- h3 {
-     text-align: center;
-     text-decoration: underline;
-     font-size: 25px;
-     color: white;
- }
+/*SECTION1*/
 
+#inicio {
+    background: url(https://cdn.wallpapersafari.com/38/22/74HY35.jpg);
+    background-size: cover;
+    background-position: center center;
+}
 
- .titplep {
-     text-decoration: underline;
-     font-size: 50px;
-     color: white;
- }
+.section1 {
+    width: 100%;
+    height: 260vh;
+}
 
- .titles {
-     text-decoration: underline;
-     font-size: 50px;
-     color: #fff;
- }
+/*SECTION 2*/
+#inicio2 {
+    background: url(https://wallpaperaccess.com/full/781843.jpg);
+    background-size: cover;
+    background-position: center center;
+}
 
- footer {
-     display: flexbox;
-     text-decoration: underline;
-     text-align: center;
-     font-size: 20px;
-     background: rgba(25, 254, 0, 0.4);
- }
+.section2 {
+    height: 260vh;
+    width: 100%;
+}
 
- .clase-box .box:hover {
-     transform: translateY(-15px);
-     box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
- }
+/*BOX GENERALES*/
 
- .img {
-     margin: 5px;
-     height: 290px;
-     width: 210px;
- }
+.clase-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
 
 
- .li {
-     margin-bottom: 20px;
-     display: flex;
-     text-align: start;
-     font-size: 25px;
-     color: #fff;
- }
+.box {
+    width: 400px;
+    height: 800px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
- .buttons {
-     background-color: rgba(98, 94, 94, 0.5);
-     font-size: 20px;
-     font-family: "Roboto", sans-serif;
-     border: solid black;
-     box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
-     border-radius: 25px;
- }
 
- .imgtuco {
-     margin: 5px;
-     height: 290px;
-     width: 230px;
- }
+/*MAS MODIFICACIONES GENERALES*/
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+h3 {
+    margin-top: 40px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    color: white;
+}
+
+/*TITULO PRINCIPAL */
+.titplep {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding: 50px;
+
+}
+
+/*TITULO SECUNDARIO*/
+.titles {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+/*FOOTER*/
+
+.footer {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background: black;
+}
+
+/*SOMBRA CAJAS*/
+.clase-box .box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+}
+
+/*LI CAJAS*/
+.li {
+    margin: 20px;
+    display: flex;
+    text-align: start;
+    font-size: 25px;
+    color: #fff;
+}
+
+/*BOTONES SABER MAS */
+.buttons {
+    color: white;
+    padding: 10px;
+    background-color: black;
+    font-size: 15px;
+    border: solid white;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    border-radius: 30px;
+}
+
+/*IMAGENES*/
+.img {
+    margin: 5px;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
